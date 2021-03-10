@@ -1,11 +1,10 @@
-print("Nama : Arda Nugraha")
-print("NRP : 152017088")
+print("Adam Muhammad Afriazi 152017128 ")
 print("Algoritma Montecarlo")
 
 import pandas as pd
 import numpy as np
 import random
-data = np.array([[0, 20], [1, 40], [2, 20], [3, 10], [4, 10]])
+data = np.array([[0, 100], [1, 35], [2, 50], [3, 25], [4, 40]])
 pd.DataFrame(data, columns=["Minggu Ke", "Frekuensi"])
 
 mingguke = data[:0]
@@ -56,7 +55,7 @@ interval_maxd=np.array([prob_k])
 data = np.concatenate((data, interval_maxd.T),axis=1)
 pd.DataFrame(data, columns=["Minggu Ke", "Frekuensi","Probabilitas","Probabilitas Kumulatif","Interval Batas Bawah","Interval Batas Atas"])
 
-minggu_baru=101
+minggu_baru=1
 p_minggu = []
 angka_acak = []
 permintaan = []
